@@ -5,7 +5,7 @@ public class homework2Pyramid {
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Please enter size of Pyramid X and Y with space between them = ");
+        System.out.println("Please enter size of Pyramid X and Y = ");
         int x = scanner.nextInt();     //we ask user enter size of our pyramid
         int y = scanner.nextInt();     // it will have x and y sides
 
