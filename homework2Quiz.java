@@ -10,13 +10,13 @@ public class homework2Quiz {
                 "Which country hosted the 1998 Winter Olympics?"}; // defined arrays of questions
         String[] answers = {"basket", "8.7 mil", "Japan"};   // defined arrays of answers
         Random random = new Random ();
-        int que = random.nextInt(questions.length); //choosing random question
-        System.out.println(questions[que]); //and asking user
-        String correctanswer = ""; //here we declare our variable with correct answer
-        if(questions[que].equals(questions[0])){ //here is condition if choosen question are 0 element of array questions
-            correctanswer = answers[0]; //then variable correctanswer declared even to 0 element of answers array
+        int que = random.nextInt(questions.length);    //choosing random question
+        System.out.println(questions[que]);            //and asking user
+        String correctanswer = "";                     //here we declare our variable with correct answer
+        if(questions[que].equals(questions[0])){       //here is condition if choosen question are 0 element of array questions
+            correctanswer = answers[0];                 //then variable correctanswer declared even to 0 element of answers array
         }else if (questions[que].equals(questions[1])){ //same thing only with 1st element in array
-            correctanswer = answers[1]; //and so on
+            correctanswer = answers[1];                //and so on
         }else if (questions[que].equals(questions[2])){
             correctanswer = answers[2];
         }
@@ -26,13 +26,13 @@ public class homework2Quiz {
 
         Scanner scan = new Scanner(System.in);
         int count = 2;
-        String pass = "pass";
+        String pass = "pass";                       // that will be word user have to enter to stop our quiz\test
         for (int i = 3; i > 0; i--) {
             String answer = scan.nextLine();
-            if (answer.equals(correctanswer)){ //here if answer even to correctanswer, then we print following...
+            if (answer.equals(correctanswer)){      //here if answer even to correctanswer, then we print following...
                 System.out.println("You're right. Congratulations!");
                 break;
-            }else if(answer.equals(pass)){ //here if user decide to quit our questions quiz
+            }else if(answer.equals(pass)){          //here if user decide to quit our questions quiz
                 System.out.println("You lose. Correct answer is: " + correctanswer);
                 break;
             }else {
